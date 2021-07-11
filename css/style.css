@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+width: 100vw;
+height: 100vh;
+background-image: url('../img/maxresdefault.jpg');
+background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+    overflow:auto;
+    /* position: relative; */
+
+  
+
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.music-search{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 50px;
+
+    }
+
+ h3{
+        color: white;
+    }
+
+.search-box{
+    width: 600px;
+    height: 40px;
+    top: 120px ;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: absolute;
+    left: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+} 
+h1{
+    color: yellowgreen;
+    font-family: monospace;
+}
+
+#btn{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+#h3{
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+
+input{
+    width: 500px;
+    height: 70px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    position: sticky;
+    overflow: auto;
+}
+
+button{
+    width: 100px;
+    height:50px;
+    /* flex-grow: 2; */
+    font-size: 25px;
+    
+    
+}
+#finder{
+    width: 50px;
+    height:70px;
+    background-image: url('../img/search-solid.svg');
+    background-repeat: no-repeat;    
+    border: none;
+    border-radius: 10px;
+    
+    background-color: white;
+    /* background-size: 100%; */
+   
+
+}
+
+h1{
+    position: absolute;
+    right: 100px;
+    font-size: 100px;
+
+}
+
+.music-list{
+    display: flex;
+    flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+.music-list li{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-shrink: 1;
+        padding: 15px;
+        border: 2px solid gray;
+        margin-bottom: 15px;
+         /* background-color: black; */
+        color: blanchedalmond;
+        max-width: 350px;
+        min-height: 350px;
+        background-image: url('https://picsum.photos/400');
+}
+
+.music-list li:before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+
+}
+
+
+
+.music-list li h3,
+.music-list li a,
+.music-list li div{
+    position: relative;
+    z-index: 2;
+}
+
+.music-list li div{
+margin-top: auto;
+}
+
+.music-list li h3{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 1px;
+
+
+
+
+}   
+
